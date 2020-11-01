@@ -5,8 +5,13 @@ let currentDate = new Date();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+// setting variable to get the current date and month out of the array
 let currentMonth = months[currentDate.getMonth()];
 let currentDay = days[currentDate.getDay()];
+
+// printing current date to paragraph tagg with ID name currentDay
+$("#currentDay").append(currentDay + ", " + currentMonth + " " + currentDate.getDate() + ", " + currentDate.getFullYear());
+
 
 console.log(currentDay + ", " + currentMonth + " " + currentDate.getDate());
 
@@ -14,7 +19,6 @@ console.log(currentDay + ", " + currentMonth + " " + currentDate.getDate());
 // console.log(days[currentDate.getDay()]);
 
 // id name where to display date: currentDay
-//$("#currentDay").append("");
 
 // console.log(currentDate.getFullYear());
 // console.log(currentDate.getMonth());
