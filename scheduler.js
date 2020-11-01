@@ -24,23 +24,26 @@ for(i = 9; i <= 24; i++) {
     let eventSlot = $('<textarea>');
     let btnSave = $('<button>')
 
-    // Setting block
+    // Adding class
+    hourBlock.addClass("row");
     hourBlock.addClass("time-block");
-    hourBlock.attr("hour-block", i);
-    $(".container").append(hourBlock);
-    
-    // Show time
     timeSlot.addClass("hour");
+    eventSlot.addClass("description");
+    btnSave.addClass("saveBtn");
+    
+    // outside div
+    hourBlock.attr("hour-block", i);
+
+
+    // display time
     timeSlot.attr("hour-value", i);
     timeSlot.text(i);
-    $(".time-block").append(timeSlot);
 
-    // event description
-    eventSlot.addClass("description");
-    eventSlot.attr("hour-value", i);
-    $(".time-block").append(eventSlot);
+    // Save button text
+    btnSave.text("Save");
 
-    // change class color when time has past, or present or future
+
+    // change color when time has past, or present or future
     if (i > currentHour) {
         eventSlot.addClass("future");
     } else if (i < currentHour) {
@@ -48,7 +51,26 @@ for(i = 9; i <= 24; i++) {
     } else {
         eventSlot.addClass("present");
     }
+
+
+    eventSlot.attr("hour-value", i);
     eventSlot.text("nothing here yet");
+
+
+    $(".container").append(hourBlock);
+    $(".time-block").append(timeSlot);
+    $(".time-block").append(eventSlot);
+    $(".time-block").append(btnSave);
+
+
+
+
+
+
+
+    
+
+
 
 };
 
