@@ -12,15 +12,3 @@ let currentDay = days[currentDate.getDay()];
 // printing current date to paragraph tagg with ID name currentDay
 $("#currentDay").append(currentDay + ", " + currentMonth + " " + currentDate.getDate() + ", " + currentDate.getFullYear());
 
-
-console.log(currentDay + ", " + currentMonth + " " + currentDate.getDate());
-
-// console.log(months[currentDate.getMonth()]);
-// console.log(days[currentDate.getDay()]);
-
-// id name where to display date: currentDay
-
-// console.log(currentDate.getFullYear());
-// console.log(currentDate.getMonth());
-// console.log(currentDate.getDay());
-// console.log(Date.now());
