@@ -11,13 +11,28 @@ $("#currentDay").append(currentDate);
 //textarea
 
 let currentHour = moment().format("hA");
-//let setHour = "";
+
 
 
 console.log(currentHour);
 
 for(i = 9; i <= 17; i++) {
-    console.log(i);
+
+    // setting variable inside loop
+    let hourBlock = $('<div>');
+    let timeSlot = $('<div>');
+
+    // Setting block
+    hourBlock.addClass("time-block");
+    hourBlock.attr("hour-block", i);
+    $(".container").append(hourBlock);
+    
+    // Show time
+
+    timeSlot.addClass("hour");
+    timeSlot.attr("hour-value", i);
+    timeSlot.text(i);
+    $(".time-block").append(timeSlot);
 };
 
 
