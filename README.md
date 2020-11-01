@@ -15,11 +15,12 @@ https://ycthao.github.io/WorkDayScheduler/
 
 ## Installing ##
 
-
+Not required if opened via link provided. 
+If not using the link, download zip via GitHub. Unzip file downloaded, then open index.html to view.
 
 ## Code ##
 
-
+HTML, CSS, JavaScript, JQuery
 
 ## Author ##
 
